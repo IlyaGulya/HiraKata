@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="btn_hint">Hint</string>
+	<string name="main_type">Question Type</string>
+	<string name="buttons_type">Answers Type</string>
+	<string name="buttons_num">Number of answers</string>
+	<string name="vowels">Vowels</string>
+	<string name="base">Base</string>
+	<string name="marks">Marks</string>
+	<string name="doubles">Doubles</string>
+	<string name="reset_settings">Reset Settings</string>
+	<string name="reset_statistics">Reset Statistics</string>
+	<string name="correct">Correct</string>
+	<string name="wrong">Wrong</string>
+	<string-array name="types">
+		<item>Hiragana</item>
+		<item>Katakana</item>
+		<item>Romaji</item>
+		<item>Kiriji</item>
+	</string-array>
+</resources>

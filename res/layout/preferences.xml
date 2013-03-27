@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  android:orientation="vertical"
+			  android:layout_width="fill_parent"
+			  android:layout_height="fill_parent">
+
+	<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+		<TextView
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:id="@+id/textView"
+				style="@style/PrefsTextView"
+				android:text="@string/main_type"
+				android:gravity="center_vertical" android:layout_gravity="center" android:layout_weight="1"
+				/>
+		<Spinner
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/typeMainSpinner"
+				android:textAlignment="center"
+				android:layout_toRightOf="@+id/textView" android:layout_alignTop="@+id/textView"
+				android:layout_gravity="center" style="@style/PrefsSpinner"/>
+	</LinearLayout>
+	<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+		<TextView
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:text="@string/buttons_type"
+				android:id="@+id/textView1"
+				style="@style/PrefsTextView"
+				android:layout_gravity="center" android:layout_weight="1"/>
+		<Spinner
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/typeButtonsSpinner"
+				android:textAlignment="center"
+				android:layout_alignLeft="@+id/typeMainSpinner" android:layout_below="@+id/typeMainSpinner"
+				style="@style/PrefsSpinner"/>
+	</LinearLayout>
+	<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+		<TextView
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:text="@string/buttons_num"
+				android:id="@+id/textView2"
+				style="@style/PrefsTextView"
+				android:layout_gravity="center" android:layout_weight="1"/>
+		<Spinner
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/numButtonsSpinner"
+				android:layout_alignLeft="@+id/typeMainSpinner" android:layout_centerVertical="true"
+				style="@style/PrefsSpinner"/>
+	</LinearLayout>
+	<TableLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+		<TableRow
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent">
+			<CheckBox
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/vowels"
+					android:id="@+id/cbVowels" android:checked="false" style="@style/PrefsCheckBox"
+					/>
+			<CheckBox
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/base"
+					android:id="@+id/cbBase" android:checked="false" style="@style/PrefsCheckBox"
+					/>
+		</TableRow>
+		<TableRow
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent">
+			<CheckBox
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/marks"
+					android:id="@+id/cbMarks" android:checked="false" style="@style/PrefsCheckBox"
+					/>
+			<CheckBox
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/doubles"
+					android:id="@+id/cbDoubles" android:checked="false" style="@style/PrefsCheckBox"
+					/>
+		</TableRow>
+	</TableLayout>
+	<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_gravity="center_horizontal"
+			android:layout_marginTop="20dp" android:layout_marginLeft="20dp" android:layout_marginRight="20dp">
+		<Button
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/reset_settings"
+				android:id="@+id/btnResetSettings" android:minHeight="60dp" android:layout_weight="1"/>
+		<Button
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/reset_statistics"
+				android:id="@+id/btnResetStats" android:minHeight="60dp" android:layout_weight="1"/>
+	</LinearLayout>
+</LinearLayout>

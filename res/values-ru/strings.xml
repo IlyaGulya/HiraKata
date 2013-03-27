@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="btn_hint">Подсказка</string>
+	<string name="main_type">Тип вопроса</string>
+	<string name="buttons_type">Тип ответов</string>
+	<string name="buttons_num">Количество ответов</string>
+	<string name="vowels">Гласные</string>
+	<string name="base">Основные</string>
+	<string name="marks">Знаковые</string>
+	<string name="doubles">Парные</string>
+	<string name="reset_settings">Сбросить настройки</string>
+	<string name="reset_statistics">Сбросить статистику</string>
+	<string name="correct">Верно</string>
+	<string name="wrong">Ошибка</string>
+	<string-array name="types">
+		<item>Хирагана</item>
+		<item>Катакана</item>
+		<item>Ромадзи</item>
+		<item>Киридзи</item>
+	</string-array>
+</resources>
